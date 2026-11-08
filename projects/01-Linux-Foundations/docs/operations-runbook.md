@@ -5,13 +5,18 @@
 
 ## Set ownership on folder
 New owner: 
+# Change owner only
 `sudo chown [newowner]: foldername`
 
 New group:
+# Change group only
 `sudo chown :[newGroup] foldername`
 
-## Set permissions on folder
-`sudo chmod 2770`
+# Change owner and group
+`sudo chown [newowner]:[newGroup] foldername`
+
+## Set permissions on directory
+`sudo chmod 2770 [directory_path]`
 
 2 is for sgid
 swap out 770 with numbers that represent the actual permissions you want to set
@@ -19,6 +24,8 @@ swap out 770 with numbers that represent the actual permissions you want to set
 ## Onboard a new employee
 Create the new employee's account and add them to their corresponding groups
 `sudo useradd -m -G [user's group] [newuser]`
+
+### Note: use the `-G` flag and not `-g` in order to add the group as a supplementary group. The primary group should remain the user's private group
 
 Set the new employee's password
 `sudo passwd [newuser]`
