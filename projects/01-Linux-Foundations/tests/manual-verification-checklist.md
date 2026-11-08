@@ -3,13 +3,13 @@
 Use this checklist to confirm that the Northstar Systems access control environment was implemented correctly.
 
 ## Identity & Groups
-- [ ] All required groups were created (`platform-eng`, `developers`, `security`, `operations`, `shared-docs`)
+- [ ] All required groups were created (`platform-eng`, `developers`, `security`, `operations`)
 - [ ] Representative users were created for each department
 - [ ] Users are members of the correct primary and supplementary groups
 - [ ] User accounts can be inspected with `id` and `groups`
 
 ## Filesystem Structure
-- [ ] `/northstar` directory and all department folders were created
+- [ ] `/srv/northstar` directory and all department folders were created
 - [ ] Sample files were created inside the department folders
 
 ## Ownership & Permissions
