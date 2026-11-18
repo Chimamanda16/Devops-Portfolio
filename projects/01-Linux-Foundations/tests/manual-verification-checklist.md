@@ -26,7 +26,7 @@ Use this checklist to confirm that the Northstar Systems access control environm
 ## Incident Investigation
 - [x] A permission or ownership problem was deliberately introduced
 - [x] Evidence was gathered before making changes
-- [ ] Root cause was correctly identified
+- [x] Root cause was correctly identified
 - [x] The smallest appropriate fix was applied
 - [x] Access was re-tested after the fix (both allowed and denied cases)
 
